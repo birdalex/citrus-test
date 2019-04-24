@@ -1,0 +1,226 @@
+.product-card{
+  position: relative;
+  left:50%;
+  margin-left: -125px;
+  width: 249px;
+  min-height: 493px;
+  padding: 18px;
+   font-family: Arial;
+  &__header{
+    display: flex;
+    margin-bottom: 6px;
+  }
+  &__video{
+    margin-right: 18px;
+  }
+  &__select-color{
+    position: absolute;
+    top:250px;
+    ul{
+      display: flex;
+      li{
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        a{
+          width: 18px;
+          height: 18px;
+          border: 1px solid #FFFFFF;
+          border-radius: 4px;
+        
+        }
+        
+       .black{
+        background: #454545;
+       }
+       .pink{
+        background: #FFACA7;
+       }
+          
+      }
+    }
+  }
+  &__rating{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__stars{
+    display: flex;
+  }
+  .stars{
+    width: 11px;
+    height: 11px;
+    background: url(../img/icon/star.png);
+  }
+  .active-stars{
+     width: 11px;
+     height: 11px;
+     background: url(../img/icon/active-star.png);
+  }
+  &__feed{
+    width: 90px;
+    height: 14px;
+    // font-family: Arial;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #7EB105;
+    &::before{
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      left: -3px;
+      width: 18px;
+      height: 14px;
+      background: url(../img/icon/feed-icon.png);
+    }
+  }
+  &__code{
+    margin-top: 5px;
+    // font-family: Arial;
+    font-size: 10px;
+    line-height: normal;
+    color: #999999;
+    span{
+      // font-size: 12px;
+      color:#000;
+    }
+  }
+  &__availability{
+     margin-top: 5px;
+     display: flex;
+     align-items: center;
+    // font-family: Arial;
+    font-size: 12px;
+    line-height: normal;
+    color: #7EB105;
+    margin-left: 5px;
+    &::before{
+      content: '';
+      display: inline-block;
+      position: relative;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $green;
+      left:-5px;
+    }
+  }
+  &__title{
+     margin-top: 5px;
+    font-size: 14px;
+    line-height: normal;
+    color: #212121;
+  }
+  &__option{
+    display: none;
+    font-size: 14px;
+     margin-top: 5px;
+     
+  }
+  .item-option{
+    width: 35px;
+    height: 18px;
+    color: $green;
+    border-bottom: 1px dashed $green;
+    cursor:pointer;
+  }
+  .active-option{
+    background: #EEFBE0;
+    border-radius: 2px;
+    margin-right: 10px;
+    color: $black;
+    border:none;
+  }
+  &__price{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .old-price{
+    font-size: 14px;
+    line-height: normal;
+    text-decoration-line: line-through;
+    color: #999999;
+    margin-right: 10px;
+  }
+  .new-price{
+    position: relative;
+    color:#F6731C;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .grn{
+    position: absolute;
+    font-size: 13px;
+    display: block;
+    right: -23px;
+    top:0;
+    font-weight: bold;
+  }
+  &__sale{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: normal;
+    color: $green;
+
+  }
+  .sale-price{
+    font-weight: bold;
+  }
+  &__footer{
+    border-top: 1px solid  #EBEBEB;
+    margin-top: 5px;
+  }
+  .wrap-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  &__stock{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .stock-text__block{
+    margin-left: 8px;
+  }
+  .stock-text__sale{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #212121;
+  }
+  .stock-text__description{
+    font-size: 11px;
+    line-height: normal;
+    color: #F6731C;
+    font-weight: bold;
+  }
+  &__properties{
+    margin-top:15px;
+    display: none;
+  }
+  .properties-title{
+    font-size: 14px;
+    line-height: normal;
+    color: #212121;
+    font-weight: bold;
+  }
+  .properties-list{
+    margin-top:5px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999999;
+    li{
+      list-style-type:disc;
+      margin-left: 19px;
+    }
+  }
+  
+}
